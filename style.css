@@ -1,0 +1,80 @@
+.upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* غيّر height إلى min-height */
+    flex-direction: column;
+}
+
+.container {
+    background-color: #007BFF;
+    border: 10px solid  #6DAEDB;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;  /* يمكنك تعديل الحجم حسب الحاجة */
+    max-width: 100%; /* لتجنب تجاوز العرض في الشاشات الصغيرة */
+}
+.upload-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  /* توسيط جميع العناصر داخل الـ div */
+    text-align: center;
+}
+
+.cameimg {
+    margin: 0 auto;  /* توسيط الصورة أفقيًا */
+    display: block;  /* تأكد من أن الصورة تعتبر block element */
+    margin-bottom: 15px;  /* مسافة صغيرة أسفل الصورة */
+    width: 70px;  /* ضبط عرض الصورة حسب رغبتك */
+    height: 70px;
+}
+
+
+.custom-file-upload {
+    display: inline-flex;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #173753;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  /* الزر يأخذ العرض الكامل */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input[type="file"] {
+    display: none;
+}
+.upload-text {
+    font-size: 14px;  /* تعديل حجم النص */
+    color: white;
+    margin-top: 10px; /* إضافة مسافة فوق النص */
+    text-align: center;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 90%;  /* تقليل العرض في الشاشات الصغيرة */
+    }
+
+    .custom-file-upload {
+        font-size: 14px;  /* تصغير حجم الخط للزر */
+    }
+}
+.centered-image {
+    display: block;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px; /* يمكنك تعديل العرض حسب الحاجة */
+    border: 10px solid  #6DAEDB; /* إضافة إطار للصورة */
+    border-radius: 10px; /* جعل الزوايا مستديرة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* إضافة ظل للصورة */
+}
